@@ -77,7 +77,7 @@ client.on('message', async msg => {
 			        .setDescription(`**الرجآء من حضرتك إختيآر رقم المقطع** :
 ${videos.map(video2 => `[**${++index} **] \`${video2.title}\``).join('\n')}`)
 
-					.setFooter("By 7midy#0060")
+					.setFooter("CN  - City Noisy")
 					msg.channel.sendEmbed(embed1).then(message =>{message.delete(20000)})
 					
 					try {
@@ -217,6 +217,30 @@ function play(guild, song) {
 	serverQueue.textChannel.send(`بدء تشغيل : **${song.title}**`);
 }
 
+
+const Discord = require('discord.js');
+const client = new Discord.Client();
+
+client.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`);
+});
+
+client.on('message', msg => {
+  if (msg.content === '3help') {
+    msg.reply('  لستغيل اغنية 
+      ``3play``
+      ايقاف اغنية 
+      ``3stop``
+      تخطى اغنية
+      ``3skip``
+      مستوى الصوت 
+    ``3vol``
+      ايقاف مؤقت
+      ``3Songs Queue``
+      معرفة ماذا يعمل
+      ``3np``');
+  }
+});
 
 
 
