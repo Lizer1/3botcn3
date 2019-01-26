@@ -227,7 +227,7 @@ client.on('ready', () => {
       console.log(`ON ${client.guilds.size} Servers '     Script By : i1Suhaib ' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(` CK 4 EVER By LIZER`,"http://twitch.tv/S-F")
+client.user.setGame(` CO 4 EVER By LIZER`,"http://twitch.tv/S-F")
 client.user.setStatus("dnd")
 });
 
